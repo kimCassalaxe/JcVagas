@@ -1,0 +1,477 @@
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: white;
+  font-family: "Fraunces", "Sitka Banner", 'Times New Roman', "Franklin Gothic Book";
+}
+
+p {
+  color: white;
+  font-family: "Epilogue";
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  font-family: "Fraunces", "Sitka Banner", 'Times New Roman';
+  outline: none;
+  border: none;
+}
+
+.btn {
+  padding: 12px;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  border-radius: 8px;
+  border: solid 2px rgb(140, 152, 202);
+  cursor: pointer;
+
+}
+
+.btnP {
+  background-color: rgb(140, 152, 202);
+  color: black;
+  margin-right: 8px;
+}
+
+.btnS {
+  background-color: black;
+  color: rgb(140, 152, 202);
+}
+
+.container {
+  background-color: rgb(8, 14, 38);
+}
+
+/* start header*/
+.header {
+  box-shadow: 1px 1px 10px  rgba(140, 152, 202, 0.199);
+  position:fixed;
+  top: 0;
+  width: 100%;
+}
+ .menuBox {
+  display: flex;
+  align-items: center;
+  background-color: rgb(8, 14, 38);
+  justify-content: space-between;
+  padding: 20px 20%;
+
+}
+
+.logo {
+  font-size: 35px;
+  font-weight:500;
+  color: white;
+  font-family: 'Epilogue',Arial, Helvetica, sans-serif;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.itemMenu {
+  padding: 5px;
+  border-bottom: solid 2px transparent;
+  transition: border-color .5s;
+}
+
+.itemMenu:hover {
+  border-color: white;
+}
+
+.menu .itemMenu a {
+  font-size: 1.3rem;
+}
+
+.headerBanner {
+  background-image: url(/img/JC-Vagas.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: aliceblue;
+  padding: 5% 20%;
+}
+
+.headerBanner h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 500;
+  line-height: 50px;
+}
+
+.headerBanner p {
+  font-size: 1rem;
+  line-height: 30px;
+}
+
+.buttonBox {
+  margin-top: 30px;
+}
+
+/* end header*/
+/* start main*/
+.containerMain {}
+
+.mainBox {
+  margin-top: 80px;
+  width: 100%;
+}
+
+.section {  
+  background-color: rgb(8, 14, 38);
+  padding: 4.75em 20%;
+}
+
+.sectionVagas h2,
+.sectionAbout h2,
+.sectionService h2 {
+  font-size: 3.5rem;
+  margin-bottom: 30px;
+}
+
+.vagasList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.vagasList .itemList {
+  padding: 15px;
+  color: white;
+  border: solid 2px rgb(140, 152, 202);
+  border-radius: 4px;
+  transition: .5s;
+  cursor: pointer;
+}
+
+.vagasList .itemList:hover {
+  background-color: rgb(140, 152, 202);
+}
+
+.vagasList .itemList:hover * {
+  color: rgb(8, 14, 38);
+}
+
+.vagasList .itemList .box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.vagaTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.vagaDate,
+.vagaLocal {
+  font-size: 14px;
+}
+
+.vagaEmpresa {
+  margin: 2px auto 10px auto;
+  font-weight: bold;
+}
+
+.vagaEmpresa span {
+  font-weight: normal;
+}
+
+.btnVerMais {
+  margin: 30px auto;
+  display: inline-block;
+}
+
+/* end main*/
+/* start main about*/
+.sectionAbout {
+  background-color: rgb(140, 152, 202);
+}
+
+.sectionAbout h2 {
+  color: black;
+}
+
+.boxCards {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+
+}
+
+.boxCards .card {
+
+  background-color: rgb(220, 224, 239);
+  padding: 1em;
+  border-radius: 4px;
+}
+
+.boxCards .card .cardTitle {
+  color: black;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.cardText {
+  color: black;
+  font-size: 18px;
+  line-height: 1.5rem;
+}
+
+/* end main about*/
+/* start main service*/
+.sectionService .box{
+
+}
+.titleSection{
+  margin-bottom: 10px;
+}
+.subTitle{
+  margin: 20px auto;
+}
+.ServiceCard {
+  color: black;
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: rgb(220, 224, 239);
+  border-radius: 8px;
+  padding: 1.1em;
+}
+
+.ServiceCard .cardTitle{
+  color: black;
+  font-size: 1.5rem;
+}.ServiceCard p{
+  font-weight: 200;
+  font-size: 1rem;
+}
+
+/* end main service*/
+/* start footer */
+
+.footer {
+  background-color: rgb(4, 7, 19);
+}
+.footerBox {
+  padding: 2.75em 20%;
+  gap: 30px;
+}
+
+.footerBox .subBox {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.footerBox .subBox .fh {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.footerBox .subBox p,
+.socialLink,
+.parceirosLink {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.copywrite {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.578);
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+/* end footer */
+
+/* start form */
+  .formVaga{
+    padding: 2.75em 20%;
+  }
+  .inputText{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    row-gap:5px ;
+    margin-bottom: 20px;
+  }
+  .inputText label{
+    text-transform: capitalize;
+  }
+  .inputText input ,textarea {
+    font-size: 18px;
+    outline: none;
+    padding: 5px;
+    background-color: transparent;
+    color: white;
+    border-radius: 4px;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+ .btnCriar{
+  padding:10px 30px;
+  background-color: black;
+  color: rgb(140, 152, 202);
+  transition: .5s;
+}
+.btnCriar:hover{
+  background-color: rgb(140, 152, 202);
+  color: black;
+}
+#btnMais, #btnMenos{
+  margin: 5px 10px;
+  background-color: aliceblue;
+  color: #000;
+  padding: 4px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .5s;
+}
+#btnMais:hover,#btnMenos:hover{
+  background-color: rgb(140, 152, 202);
+  color: black;}
+/* end form */
+
+@media screen and (max-width: 320px) {
+  p {
+    font-size: 16px;
+  }
+
+  .header .headerBox .menuBox,.formVaga {
+    padding: 20px 5%;
+
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+
+  .headerBanner {
+    margin: 5% 5%;
+    padding-bottom: 30px;
+  }
+
+  .headerBanner h1 {
+    font-size: 1.6rem;
+    line-height: 20px;
+  }
+
+  .buttonBox {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn {
+    text-align: center;
+    width: 100%;
+  }
+
+  .section {
+    padding: 4.75em 5%;
+  }
+
+  .footerBox {
+    padding: 2.75em 5%;
+  }
+
+  .footerBox .subBox .fh {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .header .headerBox .menuBox, .formVaga{
+    padding: 20px 10%;
+  }
+
+  .logo {
+    font-size: 25px;
+  }
+
+  .headerBanner {
+    margin: 5% 10%;
+    padding-bottom: 30px;
+  }
+
+  .headerBanner h1 {
+    font-size: 3rem;
+    line-height: 40px;
+  }
+
+  .buttonBox {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .btn {
+    text-align: center;
+    width: 100%;
+  }
+
+  .section {
+    padding: 4.75em 10%;
+  }
+
+  .footerBox {
+    padding: 2.75em 5%;
+    display: block;
+  }
+
+  .footerBox .subBox .fh {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .boxCards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+
+  }
+}
+
+@media screen and (min-width: 1025px) {
+
+  .headerBanner {
+    height: 85vh;
+  }
+  .footerBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 50px;
+  }
+
+  .footerBox .subBox {
+    width: calc(100% / 3);
+  }
+}
+
+/* end main about*/
