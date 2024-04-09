@@ -16,6 +16,9 @@ h4 {
   color: white;
   font-family: "Fraunces", "Sitka Banner", 'Times New Roman', "Franklin Gothic Book";
 }
+h3{
+  font-size: 2em;
+}
 
 p {
   color: white;
@@ -53,7 +56,10 @@ button {
   background-color: black;
   color: rgb(140, 152, 202);
 }
+body{
 
+  scroll-behavior: smooth;
+}
 .container {
   background-color: rgb(8, 14, 38);
 }
@@ -356,6 +362,20 @@ button {
   background-color: rgb(140, 152, 202);
   color: black;}
 /* end form */
+
+
+.listBox{
+  display: flex;
+}
+
+.filtro{
+  background-color: chartreuse;
+  width: 20%;
+  padding: 2em;
+}
+.filtro h4{
+  font-size: x-large;
+}
 
 @media screen and (max-width: 320px) {
   p {

@@ -34,6 +34,11 @@ class JcVagasController extends Controller{
     $vaga->descricao = $request->txtDescricao;
     $vaga->dataDaCriacao = $request->txtDataDaCriacao;
     $vaga->dataDalimite = $request->txtDataLimite;
+
+    //pegar o  usuario que esta logado
+    $user = auth()->user();
+    $vaga->user_id = $user->id;
+
     $vaga->save();
     return redirect("/");
   }

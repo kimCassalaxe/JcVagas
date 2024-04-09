@@ -8,16 +8,19 @@
             nossas ofertas e encontre a sua próxima grande carreira.
         </p>
         <div class="buttonBox">
-            <a class="btn btnP">Procurar Vaga</a>
-            <a class="btn btnS">Pote uma Vaga</a>
+            <a href="/listarvagas" class="btn btnP">Procurar Vaga</a>
+            <a href="/login" class="btn btnS">Postar uma Vaga</a>
         </div>
 
     </section>
     <main class="containerMain">
         <div class="mainBox">
-            <section class="section sectionVagas">
+            <section id="sectionVagas" class="section sectionVagas">
                 <h2 class="titleSection">Vagas Mais Recentes</h2>
                 <lu class="vagasList">
+                    @if (count($vagas) == 0)
+                        <p>Nao ha vagas disponiveis</p>
+                    @endif
                     @foreach ($vagas as $vaga)
                         <li class="itemList">
                             <a href="/exibirVaga/{{ $vaga->id }}">
@@ -32,9 +35,9 @@
                         </li>
                     @endforeach
                 </lu>
-                <a class="btn btnS btnVerMais">Ver mais Vagas</a>
+                <a href="/listarvagas" class="btn btnS btnVerMais">Ver mais Vagas</a>
             </section>
-            <section class="section sectionAbout">
+            <section class="section sectionAbout" id="sectionAbout">
                 <h2 class="titleSection">Sobre Nós</h2>
                 <div class="box boxCards">
                     <div class="card">

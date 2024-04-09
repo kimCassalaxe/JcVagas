@@ -36,12 +36,31 @@
                     <li class="itemMenu">
                         <a href="/listarvagas" class="menuLink special">Vagas</a>
                     </li>
+                    @auth
                     <li class="itemMenu">
                         <a href="/vagas/criarvaga" class="menuLink special">Criar Vagas</a>
                     </li>
                     <li class="itemMenu">
-                        <a href="/" class="menuLink">Sobre</a>
+                        <form action="/logout" method="post">
+                            @csrf
+
+                            <a href="/logout" class="menuLink special" onclick="event.preventDefault();
+                                    this.closest('form').submit()">
+                                    Sair
+                            </a>
+                        </form>
                     </li>
+                    @endauth
+                    <li class="itemMenu">
+                        <a href="/#sectionAbout" class="menuLink">Sobre</a>
+                    </li>
+                    @guest
+                        <li class="itemMenu">
+                        <a href="/login" class="menuLink special">Login</a>
+                    </li>
+                    @endguest
+                    
+                    
 
                 </ul>
             </nav>

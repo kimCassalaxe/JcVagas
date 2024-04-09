@@ -15,6 +15,7 @@
             @endforeach
         </ul>
         <p>Descrição da vaga {{ $vaga->descricao }}</p>
+        <br>    
         <br>
         <a href="" class="btn">Candidatar-se</a>
     </section>

@@ -2,8 +2,23 @@
 @section('title', 'Jc_Vagas Listar vagas')
 @section('content')
     <div class="mainBox">
-        <section class="section sectionVagas">
-            <h2 class="titleSection">Vagas Mais Recentes</h2>
+        <div class="listBox">
+         <article class="filtro">
+            <h4 class="filtro">filtro</h4>
+            <ul>
+                <li class="itemFiltro">Tecnologia</li>
+                <li class="itemFiltro">Tecnologia</li>
+                <li class="itemFiltro">Tecnologia</li>
+                <li class="itemFiltro">Tecnologia</li>
+                <li class="itemFiltro">Tecnologia</li>
+                <li class="itemFiltro">Tecnologia</li>
+                <li class="itemFiltro">Tecnologia</li>
+                <li class="itemFiltro">Tecnologia</li>
+                <li class="itemFiltro">Tecnologia</li>
+            </ul>
+        </article>
+        <section class="section sectionVagasList sectionVagas">
+            <h3 class="titleSection">Encontre a sua oportunidade</h3>
             <lu class="vagasList">
                 @foreach ($vagas as $vaga)
                 <li class="itemList">
@@ -20,6 +35,8 @@
             @endforeach
             </lu>
             <a class="btn btnS btnVerMais">Ver mais Vagas</a>
-        </section>
+        </section>   
+        </div>
+        
     </div>
 @endsection
